@@ -5,6 +5,7 @@ from prediction_service import prediction
 
 
 webapp_root = "webapp"
+params_path = "params.yaml"
 
 static_dir = os.path.join(webapp_root, "static")
 template_dir = os.path.join(webapp_root, "templates")
@@ -35,4 +36,4 @@ def index():
         return render_template("index.html")
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=9000, debug=False)

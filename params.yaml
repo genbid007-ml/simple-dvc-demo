@@ -19,7 +19,7 @@ estimators:
   ElasticNet:
     params:
       alpha: 0.89
-      l1_ratio: 0.98
+      l1_ratio: 0.88
       #alpha: 0.88
       #l1_ratio: 0.89
       #alpha: 0.9
