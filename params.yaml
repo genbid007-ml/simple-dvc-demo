@@ -16,6 +16,13 @@ split_data:
   test_size: 0.2
 
 estimators:
+  svm:
+    #kernel: rbf
+    #gamma: scale
+
+    kernel: poly
+    gamma: auto
+
   ElasticNet:
     params:
       alpha: 0.89
