@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/ML/dvc%20app%20MLFLOW/src/mlruns/0/03740ed738d148b085a93978b8f0763c/artifacts
+end_time: 1617469714852
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 03740ed738d148b085a93978b8f0763c
+run_uuid: 03740ed738d148b085a93978b8f0763c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1617469714655
+status: 3
+tags: []
+user_id: ML

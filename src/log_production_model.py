@@ -10,13 +10,10 @@ import os
 
 def log_production_model(config_path):
     config = read_params(config_path)
-    
-    
+      
     mlflow_config = config["mlflow_config"] 
     
-
     model_name = mlflow_config["registered_model_name"]
-
 
     remote_server_uri = mlflow_config["remote_server_uri"]
 
@@ -61,4 +58,4 @@ if __name__ == '__main__':
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
     parsed_args = args.parse_args()
-    data = log_production_model(config_path=parsed_args.config)
+    data = log_production_model(config_path=parsed_args.config, default="params.yaml")

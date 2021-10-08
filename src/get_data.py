@@ -6,15 +6,16 @@ import yaml
 import pandas as pd
 import argparse
 
-def read_params(config_path):
+def read_params(config_path, default="params.yaml"):
     with open(config_path) as yaml_file:
         config = yaml.safe_load(yaml_file)
     return config
 
-def get_data(config_path):
+def get_data(config_path, default="params.yaml"):
     config = read_params(config_path)
     # print(config)
-    data_path = config["data_source"]["s3_source"]
+    #data_path = config["data_source"]["s3_source"]
+    data_path = config["data_source"]["local"]
     df = pd.read_csv(data_path, sep=",", encoding='utf-8')
     return df
 
