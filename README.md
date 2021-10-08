@@ -24,6 +24,8 @@ git init
 ```
 ```bash
 dvc init 
+
+if dvc init not worked try dvdc -f init #by force init
 ```
 ```bash
 dvc add data_given/winequality.csv
@@ -41,9 +43,9 @@ oneliner updates  for readme
 git add . && git commit -m "update Readme.md"
 ```
 ```bash
-git remote add origin https://github.com/c17hawke/simple-dvc-demo.git
-git branch -M main
-git push origin main
+git remote add origin https://github.com/genbid007-ml/simple-dvc-demo
+git branch -M dev
+git push origin dev
 ```
 
 tox command -
